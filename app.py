@@ -26,7 +26,7 @@ def home():
     ---
     responses:
       200:
-        description: Application running successfully
+        description: Application is running successfully
     """
     return jsonify({
         "message": "TaskFlow API Running Successfully"
