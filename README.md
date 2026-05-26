@@ -169,13 +169,21 @@ cd Python-with-Devops-CI-CD
 
 ## 3️⃣ Create Virtual Environment
 
-### Windows
+### Create Environment
 
 ```bash
 python -m venv venv
 ```
 
 ### Activate Environment
+
+#### macOS/Linux
+
+```bash
+source venv/bin/activate
+```
+
+#### Windows
 
 ```bash
 venv\Scripts\activate
@@ -186,7 +194,7 @@ venv\Scripts\activate
 ## 4️⃣ Install Dependencies
 
 ```bash
-pip install -r requirements.txt
+python -m pip install -r requirements.txt
 ```
 
 ---
@@ -212,7 +220,7 @@ http://127.0.0.1:5000
 Execute test suite:
 
 ```bash
-pytest tests/
+python -m pytest tests/
 ```
 
 Expected output:
